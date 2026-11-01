@@ -4,18 +4,22 @@
 
 **A non-destructive layer workflow for Blender's Sculpt Mode.**
 
-Organize your work into stacked **sculpt layers**. Refine, dial back, hide, reorder, or remove changes at any time without losing earlier work. Works also with **Multiresolution** modifier.
+Organize your work into stacked **sculpt layers**. Refine, dial back, hide, reorder, or remove changes at any time without losing your progress. Works also with **Multiresolution** modifier.
+
+**Find it useful?** Consider tipping at:
+
+[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8F0234LJP)
+
 
 ## Features
 
-- **Layer stack** — add, duplicate, remove, reorder (move up/down) and **merge down**
+- **Layer stack** — add, duplicate, remove, reorder and **merge down**
   sculpt layers.
 - **Per-layer opacity & visibility** — blend and toggle each layer independently.
 - **Automatic saving** — the active layer auto-saves your sculpting process.
 - **Morph Brush** — paint to erase part of a sculpted layer, as gradually as you like.
 - **Invert Layer** — turn a layer inside out: what was pushed out is pulled in.
-- **Mirror Layer** — symmetrize a layer onto the other side, or flip the two
-  sides, on X, Y or Z.
+- **Mirror Layer** — symmetrize or flip a layer onto the other side on X, Y or Z.
 - **Multiresolution support** — subdivide / unsubdivide *within* the layer system.
 - **Sync Multires** — adopt a Multires modifier you added natively.
 - **Bake to Shape Keys** — convert the layer stack into standard shape keys.
@@ -71,18 +75,6 @@ and click **Install**.
    collection and your sculpted object is hidden, so you see the result on its own.
 12. **Housekeeping:** the **Data** sub-panel offers **Duplicate Data** and **Clean Up
     Unused Data** to keep your file tidy.
-
-> Layers are non-destructive — hiding a layer or lowering its opacity never deletes your
-> sculpting. You can always bring it back.
-
-> **On a baked Multires result, do not use the Multires modifier's *Rebuild
-> Subdivisions*.** It succeeds on the geometry and **deletes every shape key** without
-> warning — the baked mesh is a genuine Catmull-Clark subdivision, so Blender happily
-> rebuilds the cage and the keys go with it. Keep the baked mesh dense.
-
-## Credits
-
-Fork credit and attribution are in [CREDITS.md](CREDITS.md).
 
 ## License
 
