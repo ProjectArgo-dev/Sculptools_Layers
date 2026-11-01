@@ -1,0 +1,29 @@
+schema_version = "1.0.0"
+
+id = "sculptools_layers"
+version = "1.0.0"
+name = "Sculptools: Layers"
+tagline = "Sculpt Layers system for non-destructive sculpting"
+maintainer = "ProjectArgo"
+type = "add-on"
+website = "https://github.com/ProjectArgo-dev/Sculptools_Layers"
+
+blender_version_min = "4.5.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+
+copyright = [
+  "2024 mifth",
+  "2026 ProjectArgo",
+]
+
+tags = ["Sculpt", "Mesh", "Modeling"]
+
+#  This program is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+#  Original name of the add-on: SculptLayers 
+
+#  Copyright (C) 2024  "mifth"
+#  Copyright (C) 2026  "ProjectArgo"

@@ -1,0 +1,50 @@
+# Repo root = this folder (the add-on package). The dev workspace one level up
+# -- CLAUDE.md, docs/, releases/, every dev_*.py -- is deliberately OUTSIDE the
+# repo. The "public repo scope" block below is a safety net for a file that
+# lands in here by mistake: the shared rules (§2) want it in every Sculptools
+# repo, and it costs nothing.
+#
+# Everything tracked here is shipped in the zip, with one intentional exception:
+# images/ is tracked (GitHub renders the README banner from it) but excluded
+# from the zip by dev_build.py. Do not "fix" that asymmetry in either direction.
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Blender
+*.blend1
+*.blend2
+*.blend@
+
+# Extension build artifacts
+*.zip
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
+
+# Scratch / temp
+/scratch/
+/tmp/
+
+# -- Public repo scope -------------------------------------------------
+# The GitHub repo holds ONLY the add-on package (what ships in the zip),
+# plus images/ for the README banner. Never committed:
+#   - project docs, AI context and handoff notes
+#   - dev-only test / probe / build scripts (every one is named dev_*.py)
+#   - build artifacts (release zips)
+/docs/
+/validation/
+/releases/
+/release/
+/dev_*.py
+CLAUDE.md
+STORE_LISTING.md
+handoff.md
